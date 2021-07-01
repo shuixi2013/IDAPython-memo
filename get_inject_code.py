@@ -54,7 +54,7 @@ def get_pdb_string():
             pass
     return possible_pdb
 
-def resolve_sockaddr_ip(sockadd_val = 0x8ACDA4D51D230002):
+def resolve_sockaddr_ip(sockadd_val):
 
     class sockaddr_in(ctypes.Structure):
         _fields_ = [("sa_family", ctypes.c_ushort),  # sin_family
